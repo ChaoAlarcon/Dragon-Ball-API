@@ -1,4 +1,4 @@
-# Consumo de API 🎮
+# Consumo de API 🖨️
 ## Objetivo 📌
 Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y mostrar información dinámica sobre personajes, episodios o eventos, utilizando programación orientada a objetos en JavaScript.
 ## Detalles del Proyecto 🗂
