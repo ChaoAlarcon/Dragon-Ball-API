@@ -23,18 +23,11 @@ Chao An Alarcón Chen
 - **Base de datos:** MySQL 
 - **API:** Dragon Ball API (REST) 
 - **Herramientas:** Visual Studio Code, Discord, GitHub, GitKraken, Postman (para pruebas de API)
-### Dependencias: 
-Fetch API o Axios (para consumo de la API) 
-JDBC o similar (para conexión con MySQL en el backend, si aplica)
 
 
 
-Funcionalidades Principales 🚀
 
-Consumo de API: Obtención de datos sobre personajes, episodios o eventos desde la Dragon Ball API.
-Gestión de datos: Almacenamiento de información relevante (ej. favoritos del usuario) en MySQL.
-Programación orientada a objetos: Uso de clases en JavaScript para modelar entidades como personajes o episodios.
-Interfaz interactiva: Visualización dinámica de los datos obtenidos desde la API en una interfaz web.
+
 
 
 
