@@ -24,8 +24,9 @@ Chao An Alarcón Chen
 - **API:** Dragon Ball API (REST) 
 - **Herramientas:** Visual Studio Code, Discord, GitHub, GitKraken, Postman (para pruebas de API)
 
+## Notas 📝
 
-
+-Centrar el GIF de Cargando en el HTML
 
 
 
