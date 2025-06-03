@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Silkscreen:wght@400;700&family=VT323&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Silkscreen', Arial, sans-serif;
+}
+
+body {
+    font-family: 'VT323', Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #e53935;
+    font-family: 'Silkscreen', Arial, sans-serif;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters input, .filters select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'VT323', Arial, sans-serif;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Handjet', Arial, sans-serif;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: 'VT323', Arial, sans-serif;
+}
+
+.card img {
+    max-width: 100px;
+    height: auto;
+    
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    font-family: 'Handjet', Arial, sans-serif;
+}
+
+.icono {
+    width: 60px;
+    height: auto;
+    margin-top: -8px;
+    margin-right: 10px;
+}

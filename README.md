@@ -26,7 +26,7 @@ Chao An Alarcón Chen
 
 ## Notas 📝
 
-- Centrar el GIF de Cargando en el HTML
+- Hacer que todo el buscador tenga estética pixelada
 
 
 
