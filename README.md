@@ -26,7 +26,7 @@ Chao An Alarcón Chen
 
 ## Notas 📝
 
-- Hacer que todo el buscador tenga estética pixelada
+
 
 
 
