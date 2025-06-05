@@ -12,9 +12,14 @@
 </head>
 <body>
   <section class="container">
-    <h1 class="text-xl-center" ><img src="ico.png" alt="Dragon Ball Icon" class="icono">Dragon Ball DataBase</h1>
+    <h1 class="text-xl-center" ><img src="lupa.png" alt="Lupa Icono" class="icono">Dragon Ball DataBase</h1>
+    <div class="text-center mb-4 align-items-center">
+     
+      
+     <input class="buscador form-text input-group-lg border-5 rounded-0 col-8" type="text" id="name" placeholder="Nombre del personaje" style="font-size: 1.5rem; " />
+     </div>
     <div class="filters row">
-      <input class="form-text input-group-lg border-5 rounded-0 col-3" type="text" id="name" placeholder="Nombre del personaje" />
+     
       <select class="form-select   form-select-lg border-5 rounded-0 col-1" id="race">
         <option class=" border-5 rounded-0" value="">Raza</option>
         <option class="border-5 rounded-0" value="Saiyan">Saiyan</option>
@@ -27,7 +32,7 @@
         <option class="border-5 rounded-0" value="Male">Masculino</option>
         <option class="border-5 rounded-0" value="Female">Femenino</option>
       </select>
-      <button class="btn btn-danger btn-lg border-5 rounded-0 col-3" onclick="searchCharacters()">Buscar</button>
+      <button class="btn btn-danger btn-lg border-5 rounded-0 col-4" onclick="searchCharacters()">Buscar</button>
     </div>
     <div id="results" class="results"></div>
     <div class="pagination" id="pagination"></div>

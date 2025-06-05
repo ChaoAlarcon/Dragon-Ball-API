@@ -25,6 +25,55 @@ h1 {
     margin-bottom: 20px;
 }
 
+.filters label {
+    flex: 1;
+    font-family: 'Handjet', Arial, sans-serif;
+    color: #333;
+}
+
+.filters select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'VT323', Arial, sans-serif;
+}
+
+.filters input[type="text"] {
+    flex: 2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'VT323', Arial, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buscador {
+    flex: 1; /* Maintains flexibility in a flex container */
+    padding: 15px; /* Increased padding for a taller input */
+    height: 50px; /* Explicit height for more vertical space */
+    border: 2px solid #ccc; /* Slightly thicker border for visibility */
+    border-radius: 5px;
+    font-family: 'VT323', Arial, sans-serif;
+    font-size: 1.2rem; /* Larger font for better readability */
+    box-sizing: border-box; /* Ensures padding doesn't increase total size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.buscador:focus {
+    border-color: #e53935; /* Red border on focus */
+    box-shadow: 0 0 5px rgba(229, 57, 53, 0.5); /* Subtle glow effect */
+    outline: none; /* Remove default browser outline */
+}
+
+.filters input[type="text"]:focus, .filters select:focus {
+     border-color: #e53935; /* Red border on focus */
+    box-shadow: 0 0 5px rgba(229, 57, 53, 0.5); /* Subtle glow effect */
+    outline: none; /* Remove default browser outline */
+}
+
+
+
 .filters input, .filters select {
     flex: 1;
     padding: 10px;
@@ -41,12 +90,25 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Handjet', Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #d32f2f;
+    color: white;
+    transform: scale(1.05); /* Zoom */
+    border-color: #e53935; /* Borde resaltado */
+     box-shadow: 0 0 5px rgba(229, 57, 53, 0.5); /* Subtle glow effect */
+    transition: all 0.3s ease;
 }
 
 .results {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
 .card {
@@ -64,17 +126,41 @@ button {
     
 }
 
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom */
+   box-shadow: 0 0 5px rgba(229, 57, 53, 0.5); /* Subtle glow effect */
+  background-color: #f8f9fa; /* Fondo más claro */
+  border-color: #e53935; /* Borde resaltado */
+}
+
 .pagination {
     text-align: center;
     margin-top: 20px;
+    
 }
 
 .pagination button {
     margin: 0 5px;
     padding: 8px 12px;
     font-family: 'Handjet', Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
+.pagination button:hover {
+    color: white;
+    transform: scale(1.05); /* Zoom */
+    border-color: #e53935; /* Borde resaltado */
+     box-shadow: 0 0 5px rgba(229, 57, 53, 0.5); /* Subtle glow effect */
+}
 .icono {
     width: 60px;
     height: auto;
