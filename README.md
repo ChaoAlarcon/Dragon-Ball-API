@@ -10,11 +10,9 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 
 ## Integrantes del Grupo 👥
 
-Álvaro Santos Calvo
 Nicolás García-Sampedro Docampo
 Chao An Alarcón Chen
 
-<img src="Grupo25.jpg" alt="Grupo25" width="250">
 
 ## Tecnologías 🛠
 
@@ -25,6 +23,10 @@ Chao An Alarcón Chen
 - **Herramientas:** Visual Studio Code, Discord, GitHub, GitKraken, Postman (para pruebas de API)
 
 ## Notas 📝
+
+- Subir la página
+- Dejar link a GitHub
+
 
 
 
