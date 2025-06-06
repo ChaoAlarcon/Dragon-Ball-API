@@ -24,8 +24,9 @@ Chao An Alarcón Chen
 
 ## Notas 📝
 
-- Subir la página
-- Dejar link a GitHub
+
+- Dejar link a GitHub en los créditos
+- Botón de Reset arriba (Para que todo vuelva a su sitio)
 
 
 
