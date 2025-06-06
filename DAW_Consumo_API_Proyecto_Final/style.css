@@ -38,7 +38,7 @@ h1 {
 .window {
   border: 2px solid black;
   background-color: #fefefe;
-  padding: 20px;
+  padding:0;
   box-shadow: 5px 5px #ccc;
   position: relative;
 }
@@ -47,7 +47,7 @@ h1 {
 .window-titlebar {
   background-color: #ff4c4c;
   color: white;
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-size: 12px;
   display: flex;
   justify-content: space-between;
@@ -113,6 +113,7 @@ h1 {
   box-shadow: 4px 4px #ccc;
 }
 
+
 .filters label {
   flex: 1;
   font-family: 'VT323', monospace;
@@ -139,6 +140,17 @@ h1 {
 .filters select:focus {
   border-color: #000;
   box-shadow: 0 0 5px #000;
+}
+
+.form-select{
+  transition: transform 0.1s ease;
+}
+
+.form-select:hover{
+  background-color: #ffffaa;
+  border-color: #000;
+  box-shadow: 0 0 5px #000;
+  transition: transform 0.1s ease;
 }
 
 /* Buscador (input destacado) */
@@ -182,6 +194,52 @@ button:hover,
   background-color: #979797;
 }
 
+
+
+
+
+.cerrar {
+  margin-left: 273px;
+  margin-top: -0.5px;
+  padding: 10px; /* Reduced padding */
+  font-size: 20px; /* Reduced font size */
+  width: 40px; /* Reduced width for a smaller square */
+  height: 40px; /* Reduced height to match width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.cerrar3 {
+margin-left: 350px;
+  margin-top: 0px;
+  margin-bottom: 2px;;
+  padding: 10px;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
+
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.cerrar2 {
+  margin-left: 219px;
+  margin-top: -30px;
+  padding: 10px; /* Reduced padding */
+  font-size: 20px; /* Reduced font size */
+  width: 40px; /* Reduced width for a smaller square */
+  height: 40px; /* Reduced height to match width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
 /* ---------------------------------------------------------
    CARDS Y RESULTADOS
 ---------------------------------------------------------- */
@@ -248,7 +306,62 @@ button:hover,
   padding: 10px;
   border: 2px solid black;
   box-shadow: 4px 4px #ccc;
+  transition: opacity 0.5s ease; /* Smooth fade transition */
+  opacity: 1; /* Default visible state */
 }
+
+.big-title.hidden {
+  opacity: 0; /* Hidden state with zero opacity */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.big-title2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: #ffffaa;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 4px 4px #ccc;
+  transition: opacity 0.5s ease; /* Smooth fade transition */
+  opacity: 1; /* Default visible state */
+}
+
+.big-title2.hidden2 {
+  opacity: 0; /* Hidden state with zero opacity */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.big-title2:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px black;
+  background-color: #fff;
+  border-color: #000;
+  transition: all 0.2s ease-in-out;
+  
+
+}
+
+.big-title:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px black;
+  background-color: #fff;
+  border-color: #000;
+  transition: all 0.2s ease-in-out;
+  
+
+}
+
+ .soft-shadow {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+
+  .modal-dialog-centered-custom {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
 
 /* ---------------------------------------------------------
    ICONOS

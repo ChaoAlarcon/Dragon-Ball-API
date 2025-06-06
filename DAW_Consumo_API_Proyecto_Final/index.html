@@ -36,8 +36,92 @@
         <img src="lupa.png" alt="Lupa Icono" class="icono">
         Dragon Ball Universe - DataBase
       </h1>
-      <span>[X]</span>
+      <button class="cerrar" onclick="hideTitle()" >X</button>
     </div>
+
+ <div class="big-title2 row align-items-center" id="modalDescription">
+  <!-- Series Button -->
+  <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#seriesModal">
+    <h2>Series</h2>
+  </button>
+  <!-- Autor Button -->
+  <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#autorModal">
+    <h2>Autor</h2>
+  </button>
+  <!-- Créditos Button -->
+  <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#creditsModal">
+    <h2>Créditos</h2>
+  </button>
+  <button class="cerrar2" onclick="hideTitle2()" >X</button>
+</div>
+
+<!-- Series Modal -->
+<div class="modal fade modal-lg" id="seriesModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
+    <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
+      <div class="window-titlebar">
+        <span class="title">Mensaje del sistema</span>
+        <button class="cerrar3" data-bs-dismiss="modal">X</button>
+      </div>
+      <div class="modal-body" style="padding: 20px;">
+        <p>Series de Dragon Ball:</p>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball</button>
+          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Z</button>
+          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball GT</button>
+          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Z Kai</button>
+          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Super</button>
+          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Super Dragon Ball Heroes</button>
+        </div>
+      </div>
+      
+      <div class="modal-footer" style="padding: 10px;">
+        <button type="button" class="button" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="button">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Autor -->
+<div class="modal fade modal-lg" id="autorModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
+    <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px;">
+      <div class="window-titlebar">
+        <span class="title">Mensaje del sistema</span>
+        <button class="cerrar3" data-bs-dismiss="modal">X</button>
+      </div>
+      <div class="modal-body" style="padding: 20px;">
+        <p>¿Deseas continuar con esta operación?</p>
+      </div>
+      <div class="modal-footer" style="padding: 10px;">
+        <button type="button" class="button" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="button">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- Créditos Modal -->
+<div class="modal fade modal-lg" id="creditsModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
+    <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px;">
+      <div class="window-titlebar">
+        <span class="title">Mensaje del sistema</span>
+        <button class="cerrar3" data-bs-dismiss="modal">X</button>
+      </div>
+      <div class="modal-body" style="padding: 20px;">
+        <p>¿Deseas continuar con esta operación?</p>
+      </div>
+      <div class="modal-footer" style="padding: 10px;">
+        <button type="button" class="button" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="button">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
     <!-- Buscador por nombre -->
     <div class="big-title text-center mb-4 align-items-center">
@@ -146,7 +230,7 @@
       // Crear tarjetas para cada personaje
       pageItems.forEach(char => {
         const card = document.createElement('div');
-        card.className = 'window card border-5 rounded-0';
+        card.className = 'window card border-5 rounded-0 padding-0';
         card.innerHTML = `
           <div class="window-titlebar card-header">
             <h3 class="title card-title">${char.name}</h3>
@@ -199,6 +283,16 @@
 
         pagination.appendChild(centerContainer);
       }
+    }
+
+     function hideTitle() {
+      const title = document.querySelector('.big-title');
+      title.classList.toggle('hidden'); /* Toggle hidden class */
+    }
+
+    function hideTitle2() {
+      const title = document.querySelector('.big-title2');
+      title.classList.toggle('hidden2'); /* Toggle hidden class */
     }
   </script>
 </body>
