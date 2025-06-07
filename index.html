@@ -1,130 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dragon Ball Universe - Search Engine</title>
+  <!-- Configuración del documento -->
+  <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptación para dispositivos móviles -->
+  <title>Dragon Ball Universe - Search Engine</title> <!-- Título de la página -->
 
-  <!-- Ícono de pestaña -->
+  <!-- Ícono de la pestaña del navegador -->
   <link rel="icon" type="image/png" href="lupa2.png">
 
-  <!-- Bootstrap CSS -->
+  <!-- Inclusión de Bootstrap CSS para estilos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Bootstrap Icons -->
+  <!-- Inclusión de Bootstrap Icons para íconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   
   <!-- Hoja de estilos personalizada -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Barra de íconos lateral superior -->
+  <button class="reset" id="resetBtn">
+    <img src="reset.png" alt="Lupa Icono" class="icono-pequeño">Reset
+  </button> <!-- Botón para reiniciar la página -->
   <div class="icon-bar">
-    <img src="https://img.icons8.com/emoji/48/000000/wastebasket-emoji.png" alt="Trash">
-    <img src="https://img.icons8.com/ios/50/000000/file--v1.png" alt="File">
-    <img src="https://img.icons8.com/ios/50/000000/folder-invoices--v1.png" alt="Folder">
-    <img src="https://img.icons8.com/ios/50/000000/email.png" alt="Email">
-    <button class="reset" onclick="hideTitle()" id="miBoton"  >Reset</button>
+    <!-- Íconos de la barra superior -->
+    <img src="https://img.icons8.com/emoji/48/000000/wastebasket-emoji.png" alt="Trash"> <!-- Ícono de papelera -->
+    <img src="https://img.icons8.com/ios/50/000000/file--v1.png" alt="File"> <!-- Ícono de archivo -->
+    <img src="https://img.icons8.com/ios/50/000000/folder-invoices--v1.png" alt="Folder"> <!-- Ícono de carpeta -->
+    <img src="https://img.icons8.com/ios/50/000000/email.png" alt="Email"> <!-- Ícono de correo -->
   </div>
 
   <!-- Sección principal de contenido -->
   <section class="container">
-
     <!-- Título principal -->
     <div class="big-title">
       <h1 class="text-xl-center title">
-        <img src="lupa.png" alt="Lupa Icono" class="icono">
-        Dragon Ball Universe - DataBase
+        <img src="lupa.png" alt="Lupa Icono" class="icono"> <!-- Ícono de lupa -->
+        Dragon Ball Universe - DataBase <!-- Título de la aplicación -->
       </h1>
-      <button class="cerrar" onclick="hideTitle(), mostrarBoton()" >X</button>
+      <button class="cerrar" onclick="hideTitle(), mostrarBoton()">X</button> <!-- Botón para ocultar el título -->
     </div>
 
- <div class="big-title2 row align-items-center" id="modalDescription">
-  <!-- Series Button -->
-  <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#seriesModal">
-    <h2>Series</h2>
-  </button>
-  <!-- Autor Button -->
-  <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#autorModal">
-    <h2>Autor</h2>
-  </button>
-  <!-- Créditos Button -->
-  <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#creditsModal">
-    <h2>Créditos</h2>
-  </button>
-  <button class="cerrar2" onclick="hideTitle2()" >X</button>
-</div>
+    <!-- Sección de botones para modales -->
+    <div class="big-title2 row align-items-center" id="modalDescription">
+      <!-- Botón para abrir el modal de series -->
+      <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#seriesModal">
+        <h2>Series</h2>
+      </button>
+      <!-- Botón para abrir el modal de autor -->
+      <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#autorModal">
+        <h2>Autor</h2>
+      </button>
+      <!-- Botón para abrir el modal de créditos -->
+      <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#creditsModal">
+        <h2>Créditos</h2>
+      </button>
+      <button class="cerrar2" onclick="hideTitle2()">X</button> <!-- Botón para ocultar esta sección -->
+    </div>
 
-<!-- Series Modal -->
-<div class="modal fade modal-lg" id="seriesModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
-    <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
-      <div class="window-titlebar">
-        <span class="title">Mensaje del sistema</span>
-        <button class="cerrar3" data-bs-dismiss="modal">X</button>
-      </div>
-      <div class="modal-body" style="padding: 20px; font-size:35px;">
-        <p>Series de Dragon Ball:</p>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball</button>
-          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Z</button>
-          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball GT</button>
-          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Z Kai</button>
-          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Super</button>
-          <button type="button" class="button" style="padding: 8px; font-size: 14px;">Super Dragon Ball Heroes</button>
+    <!-- Modal de Series -->
+    <div class="modal fade modal-lg" id="seriesModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
+        <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
+          <div class="window-titlebar">
+            <span class="title">Mensaje del sistema</span> <!-- Título del modal -->
+            <button class="cerrar3" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
+          </div>
+          <div class="modal-body" style="padding: 20px; font-size:35px;">
+            <p>Series de Dragon Ball:</p>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <!-- Botones para cada serie de Dragon Ball -->
+              <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball</button>
+              <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Z</button>
+              <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball GT</button>
+              <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Z Kai</button>
+              <button type="button" class="button" style="padding: 8px; font-size: 14px;">Dragon Ball Super</button>
+              <button type="button" class="button" style="padding: 8px; font-size: 14px;">Super Dragon Ball Heroes</button>
+            </div>
+          </div>
+          <div class="modal-footer" style="padding: 10px;">
+            <button type="button" class="button" data-bs-dismiss="modal">Cancelar</button> <!-- Botón para cerrar el modal -->
+            <button type="button" class="button">Aceptar</button> <!-- Botón de acción (sin funcionalidad específica) -->
+          </div>
         </div>
       </div>
-      
-      <div class="modal-footer" style="padding: 10px;">
-        <button type="button" class="button" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="button">Aceptar</button>
-      </div>
     </div>
-  </div>
-</div>
 
-<!-- Modal Autor -->
-<div class="modal fade modal-lg" id="autorModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
-    <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
-      <div class="window-titlebar">
-        <span class="title">Acerca de Akira Toriyama</span>
-        <button class="cerrar3" data-bs-dismiss="modal">X</button>
-      </div>
-      <div class="modal-body" style="padding: 20px;">
-        <h2>Akira Toriyama</h2>
-        <img src="https://tse1.mm.bing.net/th/id/OIP.pmZjI8GFFSUPN_TzhV9z5AHaLh?rs=1&pid=ImgDetMain" alt="Akira Toriyama" style="float: right; margin-left: 20px; max-width: 200px; border-radius: 8px;">
-        <p><strong>Akira Toriyama</strong> (5 de abril de 1955 – 1 de marzo de 2024) fue un mangaka y diseñador japonés, mundialmente reconocido por crear la icónica serie <em>Dragon Ball</em>, una de las obras más influyentes en la historia del manga y el anime. Nacido en Nagoya, Japón, Toriyama comenzó su carrera en 1978 con <em>Dr. Slump</em>, una serie de comedia que le valió el reconocimiento inicial y el Premio Shogakukan en 1981.</p>
-        <p>En 1984, publicó <em>Dragon Ball</em>, que se convirtió en un fenómeno global, inspirando múltiples adaptaciones al anime, películas, videojuegos y una amplia base de fanáticos. Su estilo de dibujo dinámico, narrativas emocionantes y personajes memorables, como Goku, dejaron una huella imborrable en la cultura pop. Además, Toriyama contribuyó al diseño de personajes en videojuegos como <em>Dragon Quest</em>, <em>Chrono Trigger</em> y <em>Blue Dragon</em>.</p>
-        <p>A lo largo de su carrera, Toriyama destacó por su creatividad, humor y capacidad para conectar con audiencias de todas las edades. Su legado continúa inspirando a artistas y creadores en todo el mundo, incluso tras su fallecimiento en 2024.</p>
-      </div>
-      <div class="modal-footer" style="padding: 10px;">
-        <button type="button" class="button" data-bs-dismiss="modal">Cerrar</button>
+    <!-- Modal de Autor -->
+    <div class="modal fade modal-lg" id="autorModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
+        <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
+          <div class="window-titlebar">
+            <span class="title">Acerca de Akira Toriyama</span> <!-- Título del modal -->
+            <button class="cerrar3" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
+          </div>
+          <div class="modal-body" style="padding: 20px;">
+            <h2>Akira Toriyama</h2>
+            <!-- Imagen del autor -->
+            <img src="https://tse1.mm.bing.net/th/id/OIP.pmZjI8GFFSUPN_TzhV9z5AHaLh?rs=1&pid=ImgDetMain" alt="Akira Toriyama" style="float: right; margin-left: 20px; max-width: 200px; border-radius: 8px;">
+            <!-- Información sobre Akira Toriyama -->
+            <p><strong>Akira Toriyama</strong> (5 de abril de 1955 – 1 de marzo de 2024) fue un mangaka y diseñador japonés, mundialmente reconocido por crear la icónica serie <em>Dragon Ball</em>, una de las obras más influyentes en la historia del manga y el anime. Nacido en Nagoya, Japón, Toriyama comenzó su carrera en 1978 con <em>Dr. Slump</em>, una serie de comedia que le valió el reconocimiento inicial y el Premio Shogakukan en 1981.</p>
+            <p>En 1984, publicó <em>Dragon Ball</em>, que se convirtió en un fenómeno global, inspirando múltiples adaptaciones al anime, películas, videojuegos y una amplia base de fanáticos. Su estilo de dibujo dinámico, narrativas emocionantes y personajes memorables, como Goku, dejaron una huella imborrable en la cultura pop. Además, Toriyama contribuyó al diseño de personajes en videojuegos como <em>Dragon Quest</em>, <em>Chrono Trigger</em> y <em>Blue Dragon</em>.</p>
+            <p>A lo largo de su carrera, Toriyama destacó por su creatividad, humor y capacidad para conectar con audiencias de todas las edades. Su legado continúa inspirando a artistas y creadores en todo el mundo, incluso tras su fallecimiento en 2024.</p>
+          </div>
+          <div class="modal-footer" style="padding: 10px;">
+            <button type="button" class="button" data-bs-dismiss="modal">Cerrar</button> <!-- Botón para cerrar el modal -->
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Créditos Modal -->
-<div class="modal fade modal-lg" id="creditsModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
-    <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
-      <div class="window-titlebar">
-        <span class="title">Mensaje del sistema</span>
-        <button class="cerrar3" data-bs-dismiss="modal">X</button>
-      </div>
-      <div class="modal-body" style="padding: 20px;">
-        <p>¿Deseas continuar con esta operación?</p>
-      </div>
-      <div class="modal-footer" style="padding: 10px;">
-        <button type="button" class="button" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="button">Aceptar</button>
+    <!-- Modal de Créditos -->
+    <div class="modal fade modal-lg" id="creditsModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
+        <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
+          <div class="window-titlebar">
+            <span class="title">Mensaje del sistema</span> <!-- Título del modal -->
+            <button class="cerrar3" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
+          </div>
+          <div class="modal-body" style="padding: 20px;">
+            <p>¿Deseas continuar con esta operación?</p> <!-- Contenido del modal -->
+          </div>
+          <div class="modal-footer" style="padding: 10px;">
+            <button type="button" class="button" data-bs-dismiss="modal">Cancelar</button> <!-- Botón para cerrar el modal -->
+            <button type="button" class="button">Aceptar</button> <!-- Botón de acción (sin funcionalidad específica) -->
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  
-</div>
 
     <!-- Buscador por nombre -->
     <div class="big-title text-center mb-4 align-items-center">
@@ -132,11 +136,12 @@
              type="text"
              id="name"
              placeholder="Nombre del personaje"
-             style="font-size: 1.5rem;" />
+             style="font-size: 1.5rem;" /> <!-- Campo de entrada para buscar por nombre -->
     </div>
 
     <!-- Filtros por raza y género -->
     <div class="filters row">
+      <!-- Selector de raza -->
       <select class="form-select form-select-lg border-5 rounded-0 col-1" id="race">
         <option value="">Raza</option>
         <option value="Saiyan">Saiyan</option>
@@ -145,84 +150,89 @@
         <option value="Android">Androide</option>
       </select>
 
+      <!-- Selector de género -->
       <select class="form-select form-select-lg border-5 rounded-0 col-1" id="gender">
         <option value="">Género</option>
         <option value="Male">Masculino</option>
         <option value="Female">Femenino</option>
       </select>
 
+      <!-- Botón para ejecutar la búsqueda -->
       <button class="border-5 rounded-0 col-4" onclick="searchCharacters()">Buscar</button>
     </div>
 
-    <!-- Resultados -->
+    <!-- Área para mostrar resultados -->
     <div id="results" class="results"></div>
 
-    <!-- Paginación -->
+    <!-- Área para la paginación -->
     <div class="pagination" id="pagination"></div>
-
   </section>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- Inclusión de Bootstrap JS para funcionalidad interactiva -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Script principal -->
   <script>
     // Variables globales
-    let allCharacters = [];
-    let currentPage = 1;
-    const itemsPerPage = 20;
+    let allCharacters = []; // Arreglo para almacenar todos los personajes
+    let currentPage = 1; // Página actual para la paginación
+    const itemsPerPage = 20; // Número de elementos por página
 
     // Función para obtener todos los personajes desde la API paginada
     async function fetchAllCharacters() {
-      let characters = [];
-      let page = 1;
-      let hasMore = true;
+      let characters = []; // Arreglo temporal para almacenar personajes
+      let page = 1; // Página inicial
+      let hasMore = true; // Bandera para controlar si hay más páginas
 
       while (hasMore) {
+        // Realiza una solicitud a la API para la página actual
         const response = await fetch(`https://dragonball-api.com/api/characters?page=${page}`);
         const data = await response.json();
 
+        // Verifica si hay personajes en la respuesta
         if (data.items && data.items.length > 0) {
-          characters = characters.concat(data.items);
-          page++;
+          characters = characters.concat(data.items); // Agrega los personajes al arreglo
+          page++; // Incrementa el número de página
         } else {
-          hasMore = false;
+          hasMore = false; // Termina el bucle si no hay más personajes
         }
       }
 
-      return characters;
+      return characters; // Devuelve el arreglo completo de personajes
     }
 
     // Función de búsqueda y filtrado
     async function searchCharacters() {
+      // Obtiene los valores de los filtros
       const name = document.getElementById('name').value.toLowerCase();
       const race = document.getElementById('race').value;
       const gender = document.getElementById('gender').value;
 
-      // Si los personajes aún no han sido cargados, cargarlos
+      // Carga los personajes si aún no han sido cargados
       if (allCharacters.length === 0) {
         allCharacters = await fetchAllCharacters();
       }
 
-      // Filtro de personajes
+      // Filtra los personajes según los criterios seleccionados
       const filtered = allCharacters.filter(char => {
         return (!name || char.name.toLowerCase().includes(name)) &&
                (!race || char.race === race) &&
                (!gender || char.gender === gender);
       });
 
-      // Mostrar resultados
+      // Muestra los resultados filtrados
       displayResults(filtered);
     }
 
-    // Mostrar personajes filtrados en la interfaz
+    // Muestra los personajes filtrados en la interfaz
     function displayResults(characters) {
       const resultsDiv = document.getElementById('results');
-      resultsDiv.innerHTML = '';
+      resultsDiv.innerHTML = ''; // Limpia el área de resultados
 
+      // Calcula los índices de inicio y fin para la paginación
       const start = (currentPage - 1) * itemsPerPage;
       const end = start + itemsPerPage;
-      const pageItems = characters.slice(start, end);
+      const pageItems = characters.slice(start, end); // Obtiene los personajes de la página actual
 
       // Si no hay personajes que coincidan
       if (pageItems.length === 0) {
@@ -230,112 +240,95 @@
         return;
       }
 
-     // Crear tarjetas estilo Retro UI para cada personaje
-pageItems.forEach(char => {
-  const card = document.createElement('div');
-  card.className = 'window carta-personaje card soft-shadow m-3';
-  card.style.width = '300px';
-  card.style.padding = '0';
+      // Crea una tarjeta para cada personaje
+      pageItems.forEach(char => {
+        const card = document.createElement('div');
+        card.className = 'window carta-personaje card soft-shadow m-3';
+        card.style.width = '300px';
+        card.style.padding = '0';
 
-  card.innerHTML = `
-    <div class="window-titlebar" style="background-color: #0078d7;">
-      <span class="title" style="font-size: 20px;">${char.name.toUpperCase()}</span>
-      <button class="cerrar4" data-bs-dismiss="modal" onclick="cerrarTarjeta(this)" >X</button>
-    </div>
-    <div class="card-body text-center" style="background-color:#fefefe; padding: 15px; border-top: 2px inset white; border-left: 2px inset white; border-right: 2px inset gray; border-bottom: 2px inset gray;">
-      <img src="${char.image}" alt="${char.name}" style="width: 100px; height: auto;  margin-bottom: 15px;">
-      <p style="font-family: 'Press Start 2P', monospace; font-size: 20px; margin: 10px 0;">Raza: ${char.race}</p>
-      <p style="font-family: 'Press Start 2P', monospace; font-size: 20px;">Género: ${char.gender}</p>
-    </div>
-  `;
+        // Contenido de la tarjeta
+        card.innerHTML = `
+          <div class="window-titlebar" style="background-color: #0078d7;">
+            <span class="title" style="font-size: 20px;">${char.name.toUpperCase()}</span>
+            <button class="cerrar4" data-bs-dismiss="modal" onclick="cerrarTarjeta(this)">X</button>
+          </div>
+          <div class="card-body text-center" style="background-color:#fefefe; padding: 15px; border-top: 2px inset white; border-left: 2px inset white; border-right: 2px inset gray; border-bottom: 2px inset gray;">
+            <img src="${char.image}" alt="${char.name}" style="width: 100px; height: auto; margin-bottom: 15px;">
+            <p style="font-family: 'Press Start 2P', monospace; font-size: 20px; margin: 10px 0;">Raza: ${char.race}</p>
+            <p style="font-family: 'Press Start 2P', monospace; font-size: 20px;">Género: ${char.gender}</p>
+          </div>
+        `;
 
-  resultsDiv.appendChild(card);
-});
+        resultsDiv.appendChild(card); // Agrega la tarjeta al área de resultados
+      });
 
-
-
-      // Generar paginación
+      // Genera los botones de paginación
       generatePagination(characters.length);
     }
 
-    // Crear botones de paginación
+    // Crea los botones de paginación
     function generatePagination(totalItems) {
-      const totalPages = Math.ceil(totalItems / itemsPerPage);
+      const totalPages = Math.ceil(totalItems / itemsPerPage); // Calcula el número total de páginas
       const pagination = document.getElementById('pagination');
-      pagination.innerHTML = '';
+      pagination.innerHTML = ''; // Limpia el área de paginación
 
       if (totalPages > 1) {
         const wrapper = document.createElement('div');
         wrapper.className = 'd-flex justify-content-center gap-2 flex-wrap w-100';
 
-        // Crear un botón por página
+        // Crea un botón por cada página
         for (let i = 1; i <= totalPages; i++) {
           const btn = document.createElement('button');
           btn.textContent = i;
           btn.className = 'border-5 rounded-0';
           btn.onclick = () => {
-            currentPage = i;
-            searchCharacters();
+            currentPage = i; // Actualiza la página actual
+            searchCharacters(); // Vuelve a ejecutar la búsqueda
           };
 
-          // Resaltar página actual
+          // Resalta la página actual
           if (i === currentPage) {
             btn.style.fontWeight = 'bold';
           }
 
-          wrapper.appendChild(btn);
+          wrapper.appendChild(btn); // Agrega el botón al contenedor
         }
 
-        // Contenedor centrado
+        // Contenedor centrado para la paginación
         const centerContainer = document.createElement('div');
         centerContainer.className = 'd-flex justify-content-center w-100';
         centerContainer.appendChild(wrapper);
 
-        pagination.appendChild(centerContainer);
+        pagination.appendChild(centerContainer); // Agrega el contenedor al área de paginación
       }
     }
 
-     function hideTitle() {
+    // Oculta o muestra el título principal
+    function hideTitle() {
       const title = document.querySelector('.big-title');
-      title.classList.toggle('hidden'); /* Toggle hidden class */
+      title.classList.toggle('hidden'); // Alterna la clase 'hidden'
     }
 
+    // Oculta o muestra la sección de botones de modales
     function hideTitle2() {
       const title = document.querySelector('.big-title2');
-      title.classList.toggle('hidden2'); /* Toggle hidden class */
+      title.classList.toggle('hidden2'); // Alterna la clase 'hidden2'
     }
 
+    // Cierra una tarjeta de personaje con animación
     function cerrarTarjeta(boton) {
-  const tarjeta = boton.closest('.card');
-  if (tarjeta) {
-    tarjeta.style.transition = 'opacity 0.2s ease-out';
-    tarjeta.style.opacity = '0';
-    
-  }
-}
+      const tarjeta = boton.closest('.card');
+      if (tarjeta) {
+        tarjeta.style.transition = 'opacity 0.2s ease-out'; // Añade transición
+        tarjeta.style.opacity = '0'; // Reduce la opacidad para ocultar
+      }
+    }
 
-function mostrarBoton() {
-  const tarjetas = document.querySelectorAll('.card');
-  const boton = document.getElementById('miBoton');
-
-  if (tarjetas.length === 0) {
-    boton.style.display = 'inline-block';
-  } else {
-    boton.style.display = 'none'; // Asegura que se oculte si hay tarjetas
-  }
-
-  if mostrarBoton() == true {
-    boton.style.display = 'inline-block';
-  } else {
-    boton.style.display = 'none'; // Asegura que se oculte si hay tarjetas
-  }
-}
-
-
-
-
-
-
+    // Evento para reiniciar la página
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      window.location.reload(); // Recarga la página
+    });
   </script>
 </body>
 </html>

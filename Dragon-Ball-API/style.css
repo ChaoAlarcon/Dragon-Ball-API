@@ -18,6 +18,7 @@ body {
   color: black;
 }
 
+/* Títulos con fuente retro pixelada */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Silkscreen', monospace;
   color: #000;
@@ -30,16 +31,41 @@ h1 {
 }
 
 /* ---------------------------------------------------------
-   VENTANAS Y CONTENEDORES
+   COMPONENTES Y ESTRUCTURAS DE INTERFAZ
 ---------------------------------------------------------- */
+
+/* Ventana estilo retro */
 .window {
   border: 2px solid black;
   background-color: #fefefe;
-  padding: 0;
+  padding:0;
   box-shadow: 5px 5px #ccc;
   position: relative;
 }
 
+/* Barra de título de ventana */
+.window-titlebar {
+  background-color: #ff4c4c;
+  color: white;
+  padding: 10px 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Título en la barra */
+.title {
+  text-transform: uppercase;
+  
+}
+
+.window-titlebar-card .title {
+  letter-spacing: 1px;
+}
+
+
+/* Ventana estilo carpeta */
 .folder-window {
   border: 2px solid #000;
   background: #ffffaa;
@@ -48,6 +74,7 @@ h1 {
   margin: 20px auto;
 }
 
+/* Ventanas multimedia */
 .video-player,
 .media-player {
   background-color: #00aaff;
@@ -58,26 +85,10 @@ h1 {
 }
 
 /* ---------------------------------------------------------
-   BARRA DE TÍTULO
----------------------------------------------------------- */
-.window-titlebar {
-  background-color: #ff4c4c;
-  color: white;
-  padding: 10px;
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.window-titlebar .title {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* ---------------------------------------------------------
    BARRAS Y ELEMENTOS INTERACTIVOS
 ---------------------------------------------------------- */
+
+/* Barra de iconos */
 .icon-bar {
   display: flex;
   justify-content: center;
@@ -96,6 +107,7 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Barra de filtros */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -107,6 +119,7 @@ h1 {
   box-shadow: 4px 4px #ccc;
   cursor: pointer;
 }
+
 
 .filters label {
   flex: 1;
@@ -137,20 +150,20 @@ h1 {
   box-shadow: 0 0 5px #000;
 }
 
-.form-select {
+.form-select{
   transition: transform 0.1s ease;
   cursor: pointer;
 }
 
-.form-select:hover {
+.form-select:hover{
   background-color: #ffffaa;
   border-color: #000;
   box-shadow: 0 0 5px #000;
+  transition: transform 0.1s ease;
+  cursor: pointer;
 }
 
-/* ---------------------------------------------------------
-   BUSCADOR
----------------------------------------------------------- */
+/* Buscador (input destacado) */
 .buscador {
   flex: 1;
   padding: 15px;
@@ -169,12 +182,9 @@ h1 {
   box-shadow: 0 0 5px #000;
 }
 
-/* ---------------------------------------------------------
-   BOTONES
----------------------------------------------------------- */
+/* Botón retro */
 .button,
-button,
-.reset {
+button {
   padding: 10px 20px;
   background-color: #ccc;
   color: black;
@@ -186,26 +196,27 @@ button,
   transition: transform 0.1s ease;
   margin: 5px;
   font-size: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+  cursor: pointer;
 }
 
 button:hover,
-.button:hover,
-.reset:hover {
+.button:hover {
   transform: scale(0.95);
   box-shadow: 0 0 5px black;
   background-color: #979797;
 }
 
-.cerrar,
-.cerrar2,
-.cerrar3,
-.cerrar4 {
-  padding: 10px;
-  font-size: 20px;
+
+
+
+
+.cerrar {
+  margin-left: 273px;
+  margin-top: -0.5px;
+  padding: 10px; /* Reduced padding */
+  font-size: 20px; /* Reduced font size */
+  width: 40px; /* Reduced width for a smaller square */
+  height: 40px; /* Reduced height to match width */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,42 +224,68 @@ button:hover,
   cursor: pointer;
 }
 
-.cerrar {
-  margin-left: 273px;
-  margin-top: -0.5px;
-  width: 40px;
-  height: 40px;
+.reset{
+  
+  
+  font-size: 10px; /* Reduced font size */
+  width: 80px; /* Reduced width for a smaller square */
+  height: 40px; /* Reduced height to match width */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.cerrar3 {
+margin-left: 350px;
+  margin-top: 0px;
+  margin-bottom: 2px;;
+  padding: 10px;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
+
+  cursor: pointer; /* Pointer cursor for interactivity */
 }
 
 .cerrar2 {
   margin-left: 219px;
   margin-top: -30px;
-  width: 40px;
-  height: 40px;
-}
-
-.cerrar3 {
-  margin-left: 350px;
-  margin-top: 0;
-  margin-bottom: 2px;
-  width: 30px;
-  height: 30px;
-  font-size: 16px;
+  padding: 10px; /* Reduced padding */
+  font-size: 20px; /* Reduced font size */
+  width: 40px; /* Reduced width for a smaller square */
+  height: 40px; /* Reduced height to match width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .cerrar4 {
-  width: 20px;
-  height: 20px;
+  
+  padding: 10px; /* Reduced padding */
+  font-size: 20px; /* Reduced font size */
+  width: 20px; /* Reduced width for a smaller square */
+  height: 20px; /* Reduced height to match width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
 }
-
-.reset {
-  width: 80px;
-  height: 40px;
-}
-
 /* ---------------------------------------------------------
    CARDS Y RESULTADOS
 ---------------------------------------------------------- */
+
+/* Tarjetas de contenido */
 .card {
   background-color: #ffffee;
   border: 2px solid black;
@@ -257,6 +294,8 @@ button:hover,
   font-family: 'VT323', monospace;
   transition: all 0.2s ease-in-out;
 }
+
+
 
 .card:hover {
   transform: scale(1.05);
@@ -270,15 +309,14 @@ button:hover,
   height: auto;
 }
 
+/* Resultados en rejilla */
 .results {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
-/* ---------------------------------------------------------
-   PAGINACIÓN
----------------------------------------------------------- */
+/* Paginación */
 .pagination {
   text-align: center;
   margin-top: 20px;
@@ -287,12 +325,39 @@ button:hover,
 .pagination button {
   margin: 0 5px;
   padding: 8px 12px;
+  font-family: 'Silkscreen', monospace;
+  box-shadow: 2px 2px #888;
+  border: 2px outset white;
+  background: #ccc;
+  color: black;
+  text-transform: uppercase;
 }
 
-/* ---------------------------------------------------------
-   TÍTULOS GRANDES
----------------------------------------------------------- */
-.big-title,
+.pagination button:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 5px black;
+  background-color: #979797;
+}
+
+/* Título grande decorado */
+.big-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: #ffffaa;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 4px 4px #ccc;
+  transition: opacity 0.5s ease; /* Smooth fade transition */
+  opacity: 1; /* Default visible state */
+}
+
+.big-title.hidden {
+  opacity: 0; /* Hidden state with zero opacity */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
 .big-title2 {
   display: flex;
   flex-wrap: wrap;
@@ -302,40 +367,49 @@ button:hover,
   padding: 10px;
   border: 2px solid black;
   box-shadow: 4px 4px #ccc;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
+  transition: opacity 0.5s ease; /* Smooth fade transition */
+  opacity: 1; /* Default visible state */
 }
 
-.big-title:hover,
-.big-title2:hover {
+.big-title2.hidden2 {
+  opacity: 0; /* Hidden state with zero opacity */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.big-title2:hover{
   transform: scale(1.05);
   box-shadow: 0 0 5px black;
   background-color: #fff;
   border-color: #000;
+  transition: all 0.2s ease-in-out;
+  
+
 }
 
-.big-title.hidden,
-.big-title2.hidden2 {
-  opacity: 0;
-  pointer-events: none;
+.big-title:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 5px black;
+  background-color: #fff;
+  border-color: #000;
+  transition: all 0.2s ease-in-out;
+  
+
 }
 
-/* ---------------------------------------------------------
-   EFECTOS Y SOMBRAS
----------------------------------------------------------- */
-.soft-shadow {
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-}
+ .soft-shadow {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
 
-.modal-dialog-centered-custom {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-}
+  .modal-dialog-centered-custom {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
 
 /* ---------------------------------------------------------
    ICONOS
 ---------------------------------------------------------- */
+
 .icono {
   width: 60px;
   height: auto;
@@ -345,9 +419,11 @@ button:hover,
   filter: contrast(120%);
 }
 
-.icono-pequeño {
+.icono-pequeño{
   width: 30px;
   height: auto;
+  
+  
   image-rendering: pixelated;
   filter: contrast(120%);
 }
