@@ -20,30 +20,30 @@
 </head>
 <body>
   <!-- Barra de íconos lateral superior -->
-  <button class="reset" id="resetBtn">
-    <img src="reset.png" alt="Lupa Icono" class="icono-pequeño">Reset
+  <button class="reset align-items-center" id="resetBtn">
+    <img src="reset.png" alt="Lupa Icono" class="icono-pequeño align-items-center ">Reset
   </button> <!-- Botón para reiniciar la página -->
-  <div class="icon-bar">
-    <!-- Íconos de la barra superior -->
-    <img src="https://img.icons8.com/emoji/48/000000/wastebasket-emoji.png" alt="Trash"> <!-- Ícono de papelera -->
-    <img src="https://img.icons8.com/ios/50/000000/file--v1.png" alt="File"> <!-- Ícono de archivo -->
-    <img src="https://img.icons8.com/ios/50/000000/folder-invoices--v1.png" alt="Folder"> <!-- Ícono de carpeta -->
-    <img src="https://img.icons8.com/ios/50/000000/email.png" alt="Email"> <!-- Ícono de correo -->
-  </div>
+
 
   <!-- Sección principal de contenido -->
   <section class="container">
     <!-- Título principal -->
-    <div class="big-title">
-      <h1 class="text-xl-center title">
+     <div class="big-title row align-items-center" >
+    <div>
+      <button class="cerrar" onclick="hideTitle()">X</button> <!-- Botón para ocultar esta sección -->
+      </div>
+     <h1 class="text-xl-center title">
         <img src="lupa.png" alt="Lupa Icono" class="icono"> <!-- Ícono de lupa -->
         Dragon Ball Universe - DataBase <!-- Título de la aplicación -->
       </h1>
-      <button class="cerrar" onclick="hideTitle(), mostrarBoton()">X</button> <!-- Botón para ocultar el título -->
+      
     </div>
 
     <!-- Sección de botones para modales -->
-    <div class="big-title2 row align-items-center" id="modalDescription">
+    <div class="big-title2 row align-items-center" >
+    <div>
+      <button class="cerrar" onclick="hideTitle2()">X</button> <!-- Botón para ocultar esta sección -->
+      </div>
       <!-- Botón para abrir el modal de series -->
       <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#seriesModal">
         <h2>Series</h2>
@@ -56,16 +56,16 @@
       <button type="button" class="border-5 rounded-0 col-3" data-bs-toggle="modal" data-bs-target="#creditsModal">
         <h2>Créditos</h2>
       </button>
-      <button class="cerrar2" onclick="hideTitle2()">X</button> <!-- Botón para ocultar esta sección -->
+      
     </div>
 
     <!-- Modal de Series -->
-    <div class="modal fade modal-lg" id="seriesModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+    <div class="modal fade modal-fullscreen" id="seriesModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
         <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
           <div class="window-titlebar">
             <span class="title">Mensaje del sistema</span> <!-- Título del modal -->
-            <button class="cerrar3" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
+            <button class="cerrar" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
           </div>
           <div class="modal-body" style="padding: 20px; font-size:35px;">
             <p>Series de Dragon Ball:</p>
@@ -88,12 +88,12 @@
     </div>
 
     <!-- Modal de Autor -->
-    <div class="modal fade modal-lg" id="autorModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+    <div class="modal fade modal-fullscreen" id="autorModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
         <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
           <div class="window-titlebar">
             <span class="title">Acerca de Akira Toriyama</span> <!-- Título del modal -->
-            <button class="cerrar3" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
+            <button class="cerrar" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
           </div>
           <div class="modal-body" style="padding: 20px;">
             <h2>Akira Toriyama</h2>
@@ -112,12 +112,12 @@
     </div>
 
     <!-- Modal de Créditos -->
-    <div class="modal fade modal-lg" id="creditsModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+    <div class="modal fade modal-fullscreen" id="creditsModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
         <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto;">
           <div class="window-titlebar">
             <span class="title">Mensaje del sistema</span> <!-- Título del modal -->
-            <button class="cerrar3" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
+            <button class="cerrar" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
           </div>
           <div class="modal-body" style="padding: 20px;">
             <p>¿Deseas continuar con esta operación?</p> <!-- Contenido del modal -->
@@ -251,7 +251,7 @@
         card.innerHTML = `
           <div class="window-titlebar" style="background-color: #0078d7;">
             <span class="title" style="font-size: 20px;">${char.name.toUpperCase()}</span>
-            <button class="cerrar4" data-bs-dismiss="modal" onclick="cerrarTarjeta(this)">X</button>
+            <button class="cerrar" data-bs-dismiss="modal" onclick="cerrarTarjeta(this)">X</button>
           </div>
           <div class="card-body text-center" style="background-color:#fefefe; padding: 15px; border-top: 2px inset white; border-left: 2px inset white; border-right: 2px inset gray; border-bottom: 2px inset gray;">
             <img src="${char.image}" alt="${char.name}" style="width: 100px; height: auto; margin-bottom: 15px;">
