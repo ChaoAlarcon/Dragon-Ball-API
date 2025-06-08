@@ -36,6 +36,45 @@ h1 {
 }
 
 /* ---------------------------------------------------------
+   CRÉDITOS EN HEADER
+---------------------------------------------------------- */
+
+.creditos-header {
+  font-family: 'VT323', monospace;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  text-align: center;
+  color: #333;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+  flex-wrap: wrap;
+}
+
+.pixel-heart {
+  width: clamp(15px, 2vw, 24px);
+  height: auto;
+  image-rendering: pixelated;
+  vertical-align: middle;
+}
+
+.creditos-header a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px dashed #000;
+  transition: all 0.2s ease;
+}
+
+.creditos-header a:hover {
+  color: #ff4c4c;
+  border-color: #ff4c4c;
+}
+
+
+/* ---------------------------------------------------------
    VENTANAS Y CONTENEDORES
 ---------------------------------------------------------- */
 .window {
@@ -209,8 +248,9 @@ button:hover,
 }
 
 .Botones-centrales{
- height: 100px;
+ height: 80px;
  margin-bottom: 50px;
+ margin-top: 20px;
   
 }
 
@@ -331,6 +371,35 @@ button:hover,
   filter: contrast(120%);
 }
 
+/* ---------------------------------------------------------
+   FOOTER
+---------------------------------------------------------- */
+footer {
+  width: 100vw;
+  margin: 0;
+  padding: 2vw;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  border-top: 2px solid black;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1vw;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #ffffaa;
+  text-decoration: underline;
+}
+
 
 
 /* ---------------------------------------------------------
@@ -345,6 +414,7 @@ button:hover,
     flex-direction: column;
     align-items: center;
     gap: 2vw;
+    height: 70px;
     width: 300px; 
     padding: 2vw;
 }

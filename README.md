@@ -5,7 +5,7 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 
 - **Nombre del proyecto:** Consumo de API  
 - **Institución:** Instituto Nebrija Formación Profesional 
-- **Estado:** En desarrollo
+- **Estado:** En BETA
 
 
 ## Integrantes del Grupo 👥
@@ -13,6 +13,8 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 - Nicolás García-Sampedro Docampo
 - Álvaro Santos Calvo
 - Chao An Alarcón Chen
+
+<img src="Imágenes/Grupo25.jpg" alt="Grupo25" width="250">
 
 
 ## Tecnologías 🛠
