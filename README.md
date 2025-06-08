@@ -10,8 +10,9 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 
 ## Integrantes del Grupo 👥
 
-Nicolás García-Sampedro Docampo
-Chao An Alarcón Chen
+- Nicolás García-Sampedro Docampo
+- Álvaro Santos Calvo
+- Chao An Alarcón Chen
 
 
 ## Tecnologías 🛠
@@ -24,9 +25,6 @@ Chao An Alarcón Chen
 
 ## Notas 📝
 
-
-- Dejar link a GitHub en los créditos
-- Botón de Reset arriba (Para que todo vuelva a su sitio)
 
 
 

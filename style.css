@@ -31,6 +31,10 @@ h1 {
   font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
+.header{
+  margin-bottom: 50px;
+}
+
 /* ---------------------------------------------------------
    VENTANAS Y CONTENEDORES
 ---------------------------------------------------------- */
@@ -57,6 +61,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+
 
 .window-titlebar .title {
   text-transform: uppercase;
@@ -203,6 +208,12 @@ button:hover,
   margin-top: 0;
 }
 
+.Botones-centrales{
+ height: 100px;
+ margin-bottom: 50px;
+  
+}
+
 /* ---------------------------------------------------------
    CARDS Y RESULTADOS
 ---------------------------------------------------------- */
@@ -260,7 +271,7 @@ button:hover,
   gap: 1vw;
   margin-bottom: 2vw;
   background: #ffffaa;
-  padding: 1vw;
+ 
   border: 2px solid black;
   box-shadow: 4px 4px #ccc;
   transition: all 0.2s ease-in-out;
@@ -278,15 +289,15 @@ button:hover,
 }
 
 .big-title.hidden,
-.big-title2.hidden2 {
+.big-title.hidden2 {
   opacity: 0;
   pointer-events: none;
 }
 
-.big-title2 button {
-  flex: 1 1 30%;
-  max-width: 200px;
+.big-title2{
+   padding: 1vw;
 }
+
 
 /* ---------------------------------------------------------
    EFECTOS Y SOMBRAS
@@ -329,6 +340,17 @@ button:hover,
   body {
     padding: 3vw;
   }
+
+.Botones-centrales {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    width: 300px; 
+    padding: 2vw;
+}
+
+
+
 
   .window {
     max-width: 100%;
@@ -467,4 +489,12 @@ button:hover,
   .modal-dialog-centered-custom {
     min-height: calc(100vh - 4vw);
   }
+}
+
+.Botones-centrales {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    width: 200px; 
+    padding: 2vw;
 }
