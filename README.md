@@ -2,7 +2,7 @@
 ## Objetivo 📌
 Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y mostrar información dinámica sobre personajes, episodios o eventos, utilizando programación orientada a objetos en JavaScript.
 
-[Échale un vistazo!](https://dragonballsearcher.netlify.app/)
+[¡Échale un vistazo!](https://dragonballsearcher.netlify.app/)
 
 
 ## Detalles del Proyecto 🗂
