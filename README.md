@@ -14,7 +14,7 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 - Álvaro Santos Calvo
 - Chao An Alarcón Chen
 
-<img src="Imágenes/Grupo25.jpg" alt="Grupo25" width="250">
+<img src="Grupo25.jpg" alt="Grupo25" width="250">
 
 
 ## Tecnologías 🛠
