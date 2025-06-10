@@ -31,14 +31,13 @@ h1 {
   font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
-.header{
+.header {
   margin-bottom: 50px;
 }
 
 /* ---------------------------------------------------------
    CRÉDITOS EN HEADER
 ---------------------------------------------------------- */
-
 .creditos-header {
   font-family: 'VT323', monospace;
   font-size: clamp(0.8rem, 2vw, 1.2rem);
@@ -73,6 +72,24 @@ h1 {
   border-color: #ff4c4c;
 }
 
+/* ---------------------------------------------------------
+   ICONOS
+---------------------------------------------------------- */
+.icono {
+  width: clamp(40px, 10vw, 60px);
+  height: auto;
+  margin-top: -0.8vw;
+  margin-right: 1vw;
+  image-rendering: pixelated;
+  filter: contrast(120%);
+}
+
+.icono-pequeño {
+  width: clamp(20px, 6vw, 30px);
+  height: auto;
+  image-rendering: pixelated;
+  filter: contrast(120%);
+}
 
 /* ---------------------------------------------------------
    VENTANAS Y CONTENEDORES
@@ -101,14 +118,13 @@ h1 {
   align-items: center;
 }
 
-
 .window-titlebar .title {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 /* ---------------------------------------------------------
-   BARRAS Y ELEMENTOS INTERACTIVOS
+   ELEMENTOS INTERACTIVOS - BARRAS Y FILTROS
 ---------------------------------------------------------- */
 .icon-bar {
   display: flex;
@@ -247,11 +263,10 @@ button:hover,
   margin-top: 0;
 }
 
-.Botones-centrales{
- height: 80px;
- margin-bottom: 50px;
- margin-top: 20px;
-  
+.Botones-centrales {
+  height: 80px;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 /* ---------------------------------------------------------
@@ -311,7 +326,6 @@ button:hover,
   gap: 1vw;
   margin-bottom: 2vw;
   background: #ffffaa;
- 
   border: 2px solid black;
   box-shadow: 4px 4px #ccc;
   transition: all 0.2s ease-in-out;
@@ -334,10 +348,9 @@ button:hover,
   pointer-events: none;
 }
 
-.big-title2{
-   padding: 1vw;
+.big-title2 {
+  padding: 1vw;
 }
-
 
 /* ---------------------------------------------------------
    EFECTOS Y SOMBRAS
@@ -350,25 +363,6 @@ button:hover,
   display: flex;
   align-items: center;
   min-height: calc(100vh - 2vw);
-}
-
-/* ---------------------------------------------------------
-   ICONOS
----------------------------------------------------------- */
-.icono {
-  width: clamp(40px, 10vw, 60px);
-  height: auto;
-  margin-top: -0.8vw;
-  margin-right: 1vw;
-  image-rendering: pixelated;
-  filter: contrast(120%);
-}
-
-.icono-pequeño {
-  width: clamp(20px, 6vw, 30px);
-  height: auto;
-  image-rendering: pixelated;
-  filter: contrast(120%);
 }
 
 /* ---------------------------------------------------------
@@ -400,27 +394,23 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
-
 /* ---------------------------------------------------------
    MEDIA QUERIES
 ---------------------------------------------------------- */
+/* Adaptaciones para tablets */
 @media (max-width: 768px) {
   body {
     padding: 3vw;
   }
 
-.Botones-centrales {
+  .Botones-centrales {
     flex-direction: column;
     align-items: center;
     gap: 2vw;
     height: 70px;
-    width: 300px; 
+    width: 300px;
     padding: 2vw;
-}
-
-
-
+  }
 
   .window {
     max-width: 100%;
@@ -474,7 +464,6 @@ footer a:hover {
     align-items: center;
   }
 
-
   .cerrar {
     margin-left: auto;
     margin-top: 0;
@@ -498,6 +487,7 @@ footer a:hover {
   }
 }
 
+/* Adaptaciones para móviles pequeños */
 @media (max-width: 480px) {
   body {
     padding: 4vw;
@@ -561,10 +551,11 @@ footer a:hover {
   }
 }
 
+/* Corrección extra Botones-centrales (por si media queries fallan) */
 .Botones-centrales {
-    flex-direction: column;
-    align-items: center;
-    gap: 2vw;
-    width: 200px; 
-    padding: 2vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  width: 200px;
+  padding: 2vw;
 }
