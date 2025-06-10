@@ -46,10 +46,6 @@ window.addEventListener("DOMContentLoaded", function(){
                             "<p><strong>Altura: </strong>" + alturaPokemon + "</p>" +
                             "<p><strong>Peso: </strong>" + pesoPokemon + "</p>" +
                             "<p><strong>Tipo: </strong>" + tipoPokemon + "</p>" +
-
-                            
-
-                             
                             "<p><strong>Primera Habilidad: </strong>" + primeraHabilidadPokemon + "</p>" +
                             "<p><strong>Segunda Habilidad: </strong>" + segundaHabilidadPokemon + "</p>";
         

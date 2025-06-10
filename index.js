@@ -136,6 +136,14 @@ function cerrarTarjeta(boton) {
   }
 }
 
+function hideTitle() {
+    alternarTitulo();
+  }
+
+  function hideTitle2() {
+    alternarSubtitulo();
+  }
+
 // Botón para reiniciar la búsqueda
 document.getElementById('resetBtn').addEventListener('click', () => {
   window.location.reload();
