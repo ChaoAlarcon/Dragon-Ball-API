@@ -62,9 +62,19 @@ function mostrarResultados(personajes) {
     tarjeta.className = 'window carta-personaje card soft-shadow m-3';
     tarjeta.style.width = '300px';
     tarjeta.style.padding = '0';
+    tarjeta.style.boxShadow = '8px 8px #ccc';
+
+    tarjeta.addEventListener('mouseover', () => {
+    tarjeta.style.boxShadow = '3px 4px #ccc';
+});
+
+tarjeta.addEventListener('mouseout', () => {
+    tarjeta.style.boxShadow = '8px 8px #ccc';
+});
+    
 
     tarjeta.innerHTML = `
-      <div class="window-titlebar" style="background-color: #0078d7;">
+      <div class="window-titlebar" style="background-color: #2a9d90;">
         <span class="title" style="font-size: 20px;">${personaje.name.toUpperCase()}</span>
         <button class="cerrar" data-bs-dismiss="modal" onclick="cerrarTarjeta(this)">X</button>
       </div>

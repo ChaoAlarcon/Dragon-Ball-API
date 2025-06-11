@@ -18,6 +18,7 @@ body {
   color: black;
   min-height: 100vh;
   cursor: url('black-12/1 cursor.cur')5 5, auto;
+  background-color: #ffe08d;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -71,8 +72,8 @@ h1 {
 }
 
 .creditos-header a:hover {
-  color: #ff4c4c;
-  border-color: #ff4c4c;
+  color: #d6006f;
+  border-color: #d6006f;
   cursor: url('black-12/14 cursor.cur')5 5, pointer;
 }
 
@@ -113,7 +114,7 @@ h1 {
    BARRA DE TÍTULO
 ---------------------------------------------------------- */
 .window-titlebar {
-  background-color: #ff4c4c;
+  background-color: #d6006f;
   color: white;
   padding: 1vw 2vw;
   font-size: clamp(10px, 2vw, 12px);
@@ -141,7 +142,7 @@ h1 {
 .icon-bar img {
   width: clamp(30px, 8vw, 40px);
   height: clamp(30px, 8vw, 40px);
-  background: #ffffaa;
+  background: #faa700;
   padding: 1vw;
   border: 2px solid black;
   box-shadow: 4px 4px #ccc;
@@ -153,7 +154,7 @@ h1 {
   flex-wrap: wrap;
   gap: 1vw;
   margin-bottom: 2vw;
-  background: #ffffaa;
+  background: #faa700;
   padding: 1vw;
   border: 2px solid black;
   box-shadow: 4px 4px #ccc;
@@ -194,7 +195,7 @@ h1 {
 }
 
 .form-select:hover {
-  background-color: #ffffaa;
+  background-color: #faa700;
   border-color: #000;
   box-shadow: 0 0 5px #000;
   cursor: url('black-12/14 cursor.cur')5 5, pointer;
@@ -339,7 +340,7 @@ button:hover,
   flex-wrap: wrap;
   gap: 1vw;
   margin-bottom: 2vw;
-  background: #ffffaa;
+  background: #faa700;
   border: 2px solid black;
   box-shadow: 4px 4px #ccc;
   transition: all 0.2s ease-in-out;
