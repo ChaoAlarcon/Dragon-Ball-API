@@ -104,7 +104,7 @@ function generarPaginacion(totalElementos) {
     for (let i = 1; i <= totalPaginas; i++) {
       const boton = document.createElement('button');
       boton.textContent = i;
-      boton.className = 'border-5 rounded-0';
+      boton.className = 'border-5 ';
       boton.onclick = () => {
         paginaActual = i;
         filtrarPersonajes();
