@@ -30,7 +30,7 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 - **Herramientas:** Visual Studio Code, Discord, GitHub, GitKraken, Postman (para pruebas de API)
 
 ## Notas 📝
-
+- Adaptar la página la modo oscuro
 
 
 
