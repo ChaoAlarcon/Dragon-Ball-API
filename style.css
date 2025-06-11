@@ -17,6 +17,7 @@ body {
   background-color: #f2f2f2;
   color: black;
   min-height: 100vh;
+  cursor: url('black-12/1 cursor.cur')5 5, auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,6 +35,8 @@ h1 {
 .header {
   margin-bottom: 50px;
 }
+
+
 
 /* ---------------------------------------------------------
    CRÉDITOS EN HEADER
@@ -70,6 +73,7 @@ h1 {
 .creditos-header a:hover {
   color: #ff4c4c;
   border-color: #ff4c4c;
+  cursor: url('black-12/14 cursor.cur')5 5, pointer;
 }
 
 /* ---------------------------------------------------------
@@ -193,6 +197,7 @@ h1 {
   background-color: #ffffaa;
   border-color: #000;
   box-shadow: 0 0 5px #000;
+  cursor: url('black-12/14 cursor.cur')5 5, pointer;
 }
 
 /* ---------------------------------------------------------
@@ -229,7 +234,7 @@ button,
   color: black;
   border: 2px outset white;
   font-family: 'Silkscreen', monospace;
-  cursor: pointer;
+  
   box-shadow: 2px 2px #888;
   text-transform: uppercase;
   transition: transform 0.1s ease;
@@ -241,12 +246,21 @@ button,
   box-sizing: border-box;
 }
 
+
+
+
+
 button:hover,
 .button:hover,
 .reset:hover {
   transform: scale(0.95);
   box-shadow: 0 0 5px black;
   background-color: #979797;
+  cursor: url('black-12/14 cursor.cur')5 5, pointer ;
+}
+
+.btn, .btn:hover {
+    cursor: url('black-12/14 cursor.cur')5 5, pointer ;
 }
 
 .cerrar {
@@ -258,7 +272,7 @@ button:hover,
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  cursor: pointer;
+  
   margin-left: auto;
   margin-top: 0;
 }
@@ -442,6 +456,7 @@ footer a:hover {
     width: 100%;
     max-width: 200px;
     margin: 1vw auto;
+    
   }
 
   .buscador {
@@ -504,6 +519,7 @@ footer a:hover {
 
   .filters {
     padding: 2vw;
+    margin-top: -18px ;
   }
 
   .buscador {
