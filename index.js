@@ -62,14 +62,14 @@ function mostrarResultados(personajes) {
     tarjeta.className = 'window carta-personaje card soft-shadow m-3';
     tarjeta.style.width = '300px';
     tarjeta.style.padding = '0';
-    tarjeta.style.boxShadow = '8px 8px #ccc';
+    tarjeta.style.boxShadow = '8px 8px #171717';
 
     tarjeta.addEventListener('mouseover', () => {
-    tarjeta.style.boxShadow = '0px 8px #ccc';
+    tarjeta.style.boxShadow = '0px 8px #171717';
 });
 
 tarjeta.addEventListener('mouseout', () => {
-    tarjeta.style.boxShadow = '8px 15px #ccc';
+    tarjeta.style.boxShadow = '8px 15px #171717';
 });
     
 
