@@ -83,8 +83,8 @@ h1 {
 .icono {
   width: clamp(40px, 10vw, 60px);
   height: auto;
-  margin-top: -0.8vw;
-  margin-right: 1vw;
+  margin: none;
+  padding: none;
   image-rendering: pixelated;
   filter: contrast(120%);
 }
@@ -108,7 +108,7 @@ h1 {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
 
@@ -123,7 +123,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 10px 10px 0 0;
+  border-radius: 13px 13px 0 0;
+  width: 100%;
+  
+  
   
   
 }
@@ -131,7 +134,8 @@ h1 {
 .window-titlebar .title {
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-radius: 15px 15px 0 0;
+  border-radius: 16px 16px 0 0;
+  width: 100%;
 }
 
 /* ---------------------------------------------------------
@@ -147,7 +151,7 @@ h1 {
   background: #faa700;
   padding: 1vw;
   box-shadow: 4px 4px #ccc;
-  border-radius: 15px;
+  border-radius: 16px;
   border: 3.7px solid black;
 }
 
@@ -183,7 +187,7 @@ h1 {
 
 .form-select {
   transition: transform 0.1s ease;
-  border-radius: 15px;
+  border-radius: 8px;
   
   
 }
@@ -211,9 +215,16 @@ h1 {
   cursor: pointer;
   width: 100%;
   max-width: 600px;
-  border-radius: 15px;
+  border-radius: 8px;
   
   
+}
+
+.buscador:hover {
+  background-color: #faa700;
+  border-color: #000;
+  box-shadow: 0 0 5px #000;
+  cursor: url('black-12/14 cursor.cur')5 5, pointer;
 }
 
 .buscador:focus {
@@ -243,7 +254,8 @@ button,
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  border-radius: 15px;
+  border-radius: 8px;
+  image-rendering: pixelated;
   
 }
 
@@ -268,7 +280,6 @@ button:hover,
 }
 
 .cerrar {
-  padding: 1vw;
   font-size: clamp(12px, 3vw, 16px);
   width: clamp(20px, 6vw, 30px);
   height: clamp(20px, 6vw, 30px);
@@ -276,18 +287,23 @@ button:hover,
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  border-radius: 15px;
+   border-radius: 8px;
+   margin-right: -2px;
   
   
-  margin-left: auto;
-  margin-top: 0;
+  
 }
 
 .Botones-centrales {
   height: 80px;
   margin-bottom: 50px;
   margin-top: 20px;
-  border-radius: 15px
+  border-radius: 8px;
+  image-rendering: pixelated;
+      
+      
+       
+      
   
 }
 
@@ -304,7 +320,7 @@ button:hover,
   width: 100%;
   max-width: 300px;
   margin: 1vw auto;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
 .card:hover {
@@ -340,7 +356,7 @@ button:hover,
 .pagination button {
   margin: 0 0.5vw;
   padding: 0.8vw 1.2vw;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
 /* ---------------------------------------------------------
@@ -352,6 +368,7 @@ button:hover,
   flex-wrap: wrap;
   gap: 1vw;
   margin-bottom: 2vw;
+  margin-top: 0;
   background: #faa700;
   border: 3.7px solid black;
   box-shadow: 4px 4px #ccc;
@@ -359,7 +376,11 @@ button:hover,
   opacity: 1;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 16px;
+  padding: 0;
+  
+  
+  
 }
 
 .big-title:hover,
@@ -371,7 +392,8 @@ button:hover,
 }
 
 .big-title.hidden,
-.big-title.hidden2 {
+.big-title.Botones-hidden,
+.Subtítulo-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -379,6 +401,7 @@ button:hover,
 .big-title2 {
   padding: 1vw;
 }
+
 
 /* ---------------------------------------------------------
    EFECTOS Y SOMBRAS
@@ -406,7 +429,8 @@ footer {
   font-family: 'VT323', monospace;
   border: 3.7px solid black;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
+  border-radius: 16px;
+  width: 100%;
   
 }
 
@@ -517,6 +541,11 @@ footer a:hover {
   .modal-body button {
     font-size: clamp(6px, 1.6vw, 7px);
   }
+
+  .Subtítulo{
+    margin-top: -50px
+  
+}
 }
 
 /* Adaptaciones para móviles pequeños */

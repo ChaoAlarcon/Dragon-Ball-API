@@ -65,11 +65,11 @@ function mostrarResultados(personajes) {
     tarjeta.style.boxShadow = '8px 8px #ccc';
 
     tarjeta.addEventListener('mouseover', () => {
-    tarjeta.style.boxShadow = '3px 4px #ccc';
+    tarjeta.style.boxShadow = '0px 8px #ccc';
 });
 
 tarjeta.addEventListener('mouseout', () => {
-    tarjeta.style.boxShadow = '8px 8px #ccc';
+    tarjeta.style.boxShadow = '8px 15px #ccc';
 });
     
 
@@ -78,8 +78,8 @@ tarjeta.addEventListener('mouseout', () => {
         <span class="title" style="font-size: 20px;">${personaje.name.toUpperCase()}</span>
         <button class="cerrar" data-bs-dismiss="modal" onclick="cerrarTarjeta(this)">X</button>
       </div>
-      <div class="card-body text-center" style="background-color:#fefefe; padding: 15px; border-top: 2px inset white; border-left: 2px inset white; border-right: 2px inset gray; border-bottom: 2px inset gray;">
-        <img src="${personaje.image}" alt="${personaje.name}" style="width: 100px; height: auto; margin-bottom: 15px;">
+      <div class="text-center">
+        <img src="${personaje.image}" alt="${personaje.name}" style="width: 100px; height: auto; margin-bottom: 15px ; margin-top: 15px;">
         <p style="font-family: 'Press Start 2P', monospace; font-size: 20px; margin: 10px 0;">Raza: ${personaje.race}</p>
         <p style="font-family: 'Press Start 2P', monospace; font-size: 20px;">Género: ${personaje.gender}</p>
       </div>
@@ -131,11 +131,18 @@ function alternarTitulo() {
   titulo.classList.toggle('hidden');
 }
 
-// Alterna visibilidad de la sección de modales
 function alternarSubtitulo() {
-  const subtitulo = document.querySelector('.Subtítulo');
-  subtitulo.classList.toggle('hidden2');
+  const titulo = document.querySelector('.Subtítulo');
+  titulo.classList.toggle('Subtítulo-hidden');
 }
+
+// Alterna visibilidad de la sección de modales
+function alternarBotones() {
+  const subtitulo = document.querySelector('.Botones');
+  subtitulo.classList.toggle('Botones-hidden');
+}
+
+
 
 // Cierra una tarjeta con animación
 function cerrarTarjeta(boton) {
@@ -150,9 +157,15 @@ function hideTitle() {
     alternarTitulo();
   }
 
-  function hideTitle2() {
+  function hideSubtitle() {
     alternarSubtitulo();
   }
+
+  function hideBotones() {
+    alternarBotones();
+  }
+
+ 
 
 // Botón para reiniciar la búsqueda
 document.getElementById('resetBtn').addEventListener('click', () => {
