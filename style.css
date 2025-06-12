@@ -181,7 +181,7 @@ h1 {
 
 .filters input[type="text"]:focus,
 .filters select:focus {
-  border-color: #000;
+  border-color: #d6006f;
   box-shadow: 0 0 5px #000;
 }
 
@@ -198,6 +198,8 @@ h1 {
   box-shadow: 0 0 5px #000;
   cursor: url('black-12/14 cursor.cur')5 5, pointer;
 }
+
+
 
 /* ---------------------------------------------------------
    BUSCADOR
