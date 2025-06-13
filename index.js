@@ -80,8 +80,8 @@ tarjeta.addEventListener('mouseout', () => {
       </div>
       <div class="text-center">
         <img src="${personaje.image}" alt="${personaje.name}" style="width: 100px; height: auto; margin-bottom: 15px ; margin-top: 15px;">
-        <p style="font-family: 'Press Start 2P', monospace; font-size: 20px; margin: 10px 0;">Raza: ${personaje.race}</p>
-        <p style="font-family: 'Press Start 2P', monospace; font-size: 20px;">Género: ${personaje.gender}</p>
+        <p style="font-family: 'Press Start 2P', monospace; font-size: 20px; margin: 10px 0;">Race: ${personaje.race}</p>
+        <p style="font-family: 'Press Start 2P', monospace; font-size: 20px;">Gender: ${personaje.gender}</p>
       </div>
     `;
 
