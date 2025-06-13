@@ -11,16 +11,6 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 - **Institución:** Instituto Nebrija Formación Profesional 
 - **Estado:** En BETA
 
-
-## Integrantes del Grupo 👥
-
-- Nicolás García-Sampedro Docampo
-- Álvaro Santos Calvo
-- Chao An Alarcón Chen
-
-<img src="Grupo25.jpg" alt="Grupo25" width="250">
-
-
 ## Tecnologías 🛠
 
 - **Lenguaje:** JavaScript  
@@ -31,6 +21,7 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 
 ## Notas 📝
 - Adaptar la página la modo oscuro
+- Poner bordes pixelados
 
 
 
