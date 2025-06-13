@@ -138,6 +138,11 @@ h1 {
   width: 100%;
 }
 
+.Loading-Bar{
+  border: 3.7px solid black;
+  border-radius: 8px;
+}
+
 /* ---------------------------------------------------------
    ELEMENTOS INTERACTIVOS - BARRAS Y FILTROS
 ---------------------------------------------------------- */
@@ -308,7 +313,7 @@ button:hover,
 }
 
 .Botones-centrales:hover{
-  border: 2px solid black;
+  border: 2px  solid black;
 }
 
 /* ---------------------------------------------------------
@@ -388,11 +393,20 @@ button:hover,
 }
 
 .big-title:hover,
-.big-title2:hover {
+.big-title2:hover,
+.BolaDeDragon:hover {
   transform: scale(1.05);
   box-shadow: 0 0 5px black;
-  background-color: #fff;
+  
   border-color: #000;
+}
+
+.BolaDeDragon:hover{
+  
+  
+  background-color: #d6006f;
+  border: 3.7px outset #d6006f;
+  
 }
 
 .big-title.hidden,
@@ -405,6 +419,26 @@ button:hover,
 .big-title2 {
   padding: 1vw;
 }
+
+.BolaDeDragon{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  width: 100px;
+  height: auto;
+  
+  
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2000px;
+  
+  padding: 0;
+
+}
+
+
 
 
 /* ---------------------------------------------------------
@@ -457,6 +491,25 @@ footer a:hover {
    MEDIA QUERIES
 ---------------------------------------------------------- */
 /* Adaptaciones para tablets */
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 990px){
+
+.último{
+  display: none;
+}
+
+
+
+}
 @media (max-width: 768px) {
   body {
     padding: 3vw;
@@ -465,6 +518,22 @@ footer a:hover {
   img{
     width: 70px;
     height: auto;
+  }
+
+  .elemento {
+    display: none; /* Oculta el elemento */
+  }
+
+  .BolaDeDragon{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Bolas{
+     align-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+
   }
 
   .Botones-centrales {
