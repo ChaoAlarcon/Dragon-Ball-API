@@ -171,3 +171,7 @@ function hideTitle() {
 document.getElementById('resetBtn').addEventListener('click', () => {
   window.location.reload();
 });
+
+function recargarPagina() {
+        window.location.reload();
+    }

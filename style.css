@@ -41,6 +41,34 @@ h1 {
   margin-top: -80px;
 }
 
+.title-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title-image img{
+  width: 900px;
+  height: auto;
+  transition: all 0.2s ease;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.title-image img:hover{
+   transform: scale(1.05);
+   cursor: url('black-12/14 cursor.cur')5 5, pointer;
+}
+
+#resetBtn{
+  position: fixed;
+  z-index: 1000;
+  margin-top: -20px;
+  margin-left: 75px;
+}
+
+
 
 
 /* ---------------------------------------------------------
@@ -510,6 +538,12 @@ footer a:hover {
   display: none;
 }
 
+.title-image img{
+  width: 500px;
+  height: auto;
+  
+}
+
 
 
 }
@@ -526,6 +560,13 @@ footer a:hover {
   .elemento {
     display: none; /* Oculta el elemento */
   }
+
+  .title-image img{
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  
+}
 
   .BolaDeDragon{
     align-items: center;
