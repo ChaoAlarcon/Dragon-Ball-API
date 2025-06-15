@@ -37,10 +37,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-.Bolas{
-  margin-top: -80px;
-}
-
 .title-image{
   display: flex;
   justify-content: center;
@@ -49,11 +45,11 @@ h1 {
 }
 
 .title-image img{
-  width: 900px;
+  width: 700px;
   height: auto;
+  margin-top: -70px;
   transition: all 0.2s ease;
-  margin-top: -20px;
-  margin-bottom: 20px;
+  
 }
 
 .title-image img:hover{
