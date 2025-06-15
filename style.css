@@ -64,8 +64,7 @@ h1 {
 #resetBtn{
   position: fixed;
   z-index: 1000;
-  margin-top: -20px;
-  margin-left: 75px;
+  
 }
 
 
@@ -546,6 +545,8 @@ footer a:hover {
 
 
 
+
+
 }
 @media (max-width: 768px) {
   body {
@@ -556,6 +557,8 @@ footer a:hover {
     width: 70px;
     height: auto;
   }
+
+
 
   .elemento {
     display: none; /* Oculta el elemento */
