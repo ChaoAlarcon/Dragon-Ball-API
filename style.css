@@ -74,8 +74,8 @@ h1 {
   font-size: clamp(0.8rem, 2vw, 1.2rem);
   text-align: center;
   color: #333;
-  margin-top: -10px;
-  margin-bottom: 30px;
+  
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -536,6 +536,7 @@ footer a:hover {
 .title-image img{
   width: 500px;
   height: auto;
+  margin-top: -25px;
   
 }
 
@@ -563,7 +564,7 @@ footer a:hover {
   .title-image img{
   width: 300px;
   height: auto;
-  margin-top: 10px;
+  margin-top: -25px;
   
 }
 
