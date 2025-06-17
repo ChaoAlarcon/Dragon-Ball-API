@@ -23,7 +23,7 @@ Desarrollar una aplicación web que consuma la API de Dragon Ball para obtener y
 - Adaptar la página la modo oscuro
 - Poner bordes pixelados
 - Ajustar botones en pantalla pequeña
-- Arreglar cierre de ventanas
+
 
 
 
