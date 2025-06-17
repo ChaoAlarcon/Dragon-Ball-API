@@ -37,7 +37,7 @@ h1 {
   margin-bottom: 50px;
 }
 
-.title-image{
+.icons-image, .title-image{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,10 +52,25 @@ h1 {
   
 }
 
-.title-image img:hover{
+ .title-image img:hover{
    transform: scale(1.05);
    cursor: url('black-12/14 cursor.cur')5 5, pointer;
 }
+
+.icons-image img{
+  width: auto;
+  height: 100px;
+  transition: all 0.2s ease;
+  
+}
+
+ .icons-image img:hover{
+   transform: scale(0.95);
+   cursor: url('black-12/14 cursor.cur')5 5, pointer;
+}
+
+
+
 
 #resetBtn{
   position: fixed;
@@ -342,6 +357,14 @@ button:hover,
   border: 2px  solid black;
 }
 
+.botón-personajes{
+  height: 120px;
+  width: 500px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+
+}
+
 /* ---------------------------------------------------------
    CARDS Y RESULTADOS
 ---------------------------------------------------------- */
@@ -541,7 +564,18 @@ footer a:hover {
 }
 
 
+.botón-personajes{
+  height: 100px;
+  width: 180px;
+  
+  
 
+}
+
+.botón-personajes h2 {
+  font-size: 20px;
+
+}
 
 
 }
@@ -560,6 +594,20 @@ footer a:hover {
   .elemento {
     display: none; /* Oculta el elemento */
   }
+
+  .botón-personajes{
+  height: 80px;
+  width: 120px;
+  
+  
+
+}
+
+.botón-personajes h2 {
+  font-size: 15px;
+
+}
+
 
   .title-image img{
   width: 300px;

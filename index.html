@@ -56,25 +56,28 @@
    
 
      <!-- Título principal -->
-     <div class="big-title  align-items-center  col-6 Título" >
+     <div class="big-title col-11 col-lg-8 align-items-center">
     <div class="window-titlebar" >
         <span class="title">System message</span> <!-- Título de la ventana -->
       <button class="cerrar" onclick="hideTitle()">X</button> <!-- Botón para ocultar esta sección -->
       </div>
-     <h1 class="text-xl-center title" style="margin-top: 10px; margin-bottom: 30px;">
-        
-        Dragon Ball Universe<!-- Título de la aplicación -->
-      </h1>
+     <button type=" button" class="botón-personajes border-5" data-bs-toggle="modal" data-bs-target="#charactersModal">
+        <h2>Most well known characters</h2>
+      </button>
+
       
     </div>
 
       <!-- Subtítulo -->
-     <div class="big-title  align-items-center col-5 Subtítulo" >
+     <div class="big-title col-11 col-lg-3 align-items-center">
     <div class="window-titlebar" >
         <span class="title">System message</span> <!-- Título de la ventana -->
       <button class="cerrar" onclick="hideSubtitle()">X</button> <!-- Botón para ocultar esta sección -->
       </div>
+      
      <h1 class="text-xl-center title" style="margin-top: 10px; margin-bottom: 30px;">
+
+     
         <img src="Images/Glass lines.gif" class="Loading-Bar">
         DataBase <!-- Título de la aplicación -->
       </h1>
@@ -107,6 +110,38 @@
       
     </div>
 
+
+<!-- Modal de Personajes -->
+    <div class="modal fade modal-fullscreen" id="charactersModal" tabindex="-1" aria-labelledby="instructionsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered-custom justify-content-center">
+        <div class="modal-content window soft-shadow" style="padding:0; width: 800px; height: 600px; overflow-y: auto; border-radius: 15px;">
+          <div class="window-titlebar">
+            <span class="title">System message</span> <!-- Título del modal -->
+            <button class="point cerrar" data-bs-dismiss="modal">X</button> <!-- Botón para cerrar el modal -->
+          </div>
+          <div class="modal-body" style="padding: 20px; font-size:35px;">
+            <p>Most well known Characters:</p>
+             <div class="icons-image">
+    
+    <img src="Images/1.png" >
+    <img src="Images/2.png" >
+    <img src="Images/3.png" >
+    <img src="Images/4.png" >
+    </div>
+    <div class="icons-image">
+    <img src="Images/5.png" >
+    <img src="Images/6.png" >
+    <img src="Images/7.png" >
+    <img src="Images/8.png" >
+     
+    </div>
+          </div>
+          <div class="modal-footer" style="padding: 10px; border-radius: 15px;">
+            <button type="button point" class="button" data-bs-dismiss="modal">Close</button> <!-- Botón para cerrar el modal -->
+          </div>
+        </div>
+      </div>
+    </div>
    
 
     <!-- Modal de Series -->
