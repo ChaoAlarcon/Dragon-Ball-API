@@ -58,8 +58,9 @@ h1 {
 }
 
 .icons-image img{
-  width: auto;
-  height: 100px;
+  width: 100px;
+  height: auto;
+  padding: 10px;
   transition: all 0.2s ease;
   
 }
@@ -349,7 +350,6 @@ button:hover,
   margin-bottom: 50px;
   margin-top: 20px;
   border-radius: 8px;
-  image-rendering: pixelated;
  
 }
 
@@ -358,8 +358,8 @@ button:hover,
 }
 
 .botón-personajes{
-  height: 120px;
-  width: 500px;
+  height: 90px;
+  width: 800px;
   margin-bottom: 50px;
   margin-top: 20px;
 
@@ -566,8 +566,13 @@ footer a:hover {
 
 .botón-personajes{
   height: 100px;
-  width: 180px;
+  width: 600px;
   
+ 
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+
   
 
 }
@@ -576,6 +581,15 @@ footer a:hover {
   font-size: 20px;
 
 }
+
+.Botones-centrales {
+  height: 60px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  
+ 
+}
+
 
 
 }
@@ -590,18 +604,23 @@ footer a:hover {
   }
 
 
-
   .elemento {
     display: none; /* Oculta el elemento */
   }
 
-  .botón-personajes{
-  height: 80px;
-  width: 120px;
+.botón-personajes{
+  height: 100px;
+  width: 200px;
   
+ 
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+
   
 
 }
+
 
 .botón-personajes h2 {
   font-size: 15px;
@@ -791,3 +810,4 @@ footer a:hover {
   width: 200px;
   padding: 2vw;
 }
+
