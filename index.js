@@ -176,36 +176,31 @@ function recargarPagina() {
         window.location.reload();
     }
 
-    //Fnción para cambiar imagen
+    //Función para cambiar imagen
 
-  function cambiarImagen(){
+      function cambiarImagen() {
     alternarImagen();
+}
 
-    }
-
-  function alternarImagen() {
+function alternarImagen() {
     const imagen = document.querySelector('.Imagen1');
     
-    
-
-  // Añade la clase 'fading' para iniciar el desvanecimiento
-            imagen.classList.add('fading');
-
-            // Espera un momento para que la opacidad baje antes de cambiar la imagen
-            setTimeout(() => {
-                // Cambia la fuente de la imagen
-                if (imagen.src.includes('Images/DragonBall/2.png')) {
-                    imagen.src = 'Images/1.png';
-                }
-
-                 if (imagen.src.includes('Images/1.png')) {
-
-                    imagen.style.cursor = 'none';
-                    imagen.style.hover = 'none';
-                    
-                }
-
-                // Quita la clase 'fading' para que la nueva imagen aparezca
-                imagen.classList.remove('fading');
-            }, 500); // Coincide con la duración de la transición (0.5s)
+    if (imagen.src.includes('Images/DragonBall/2.png')) {
+        // Añade la clase 'fading' para iniciar el desvanecimiento
+        imagen.classList.add('fading');
+        
+        // Espera un momento para que la opacidad baje antes de cambiar la imagen
+        setTimeout(() => {
+            // Cambia la fuente de la imagen
+            imagen.src = 'Images/1.png';
+            imagen.style.borderRadius = '0';
+            imagen.style.border = '0';
+            imagen.style.borderColor = 'none';
+            imagen.style.backgroundColor = 'transparent';
+            imagen.style.boxShadow = 'none';
+            
+            // Quita la clase 'fading' para que la nueva imagen aparezca
+            imagen.classList.remove('fading');
+        }, 500); // Coincide con la duración de la transición (0.5s)
+    }
 }
