@@ -62,14 +62,14 @@ function mostrarResultados(personajes) {
     tarjeta.className = 'window carta-personaje card soft-shadow m-3';
     tarjeta.style.width = '300px';
     tarjeta.style.padding = '0';
-    tarjeta.style.boxShadow = '8px 8px #ccc';
+    tarjeta.style.boxShadow = '8px 8px #171717';
 
     tarjeta.addEventListener('mouseover', () => {
-    tarjeta.style.boxShadow = '3px 4px #ccc';
+    tarjeta.style.boxShadow = '0px 8px #171717';
 });
 
 tarjeta.addEventListener('mouseout', () => {
-    tarjeta.style.boxShadow = '8px 8px #ccc';
+    tarjeta.style.boxShadow = '8px 15px #171717';
 });
     
 
@@ -78,10 +78,10 @@ tarjeta.addEventListener('mouseout', () => {
         <span class="title" style="font-size: 20px;">${personaje.name.toUpperCase()}</span>
         <button class="cerrar" data-bs-dismiss="modal" onclick="cerrarTarjeta(this)">X</button>
       </div>
-      <div class="card-body text-center" style="background-color:#fefefe; padding: 15px; border-top: 2px inset white; border-left: 2px inset white; border-right: 2px inset gray; border-bottom: 2px inset gray;">
-        <img src="${personaje.image}" alt="${personaje.name}" style="width: 100px; height: auto; margin-bottom: 15px;">
-        <p style="font-family: 'Press Start 2P', monospace; font-size: 20px; margin: 10px 0;">Raza: ${personaje.race}</p>
-        <p style="font-family: 'Press Start 2P', monospace; font-size: 20px;">Género: ${personaje.gender}</p>
+      <div class="text-center">
+        <img src="${personaje.image}" alt="${personaje.name}" style="width: 100px; height: auto; margin-bottom: 15px ; margin-top: 15px;">
+        <p style="font-family: 'Press Start 2P', monospace; font-size: 20px; margin: 10px 0;">Race: ${personaje.race}</p>
+        <p style="font-family: 'Press Start 2P', monospace; font-size: 20px;">Gender: ${personaje.gender}</p>
       </div>
     `;
 
@@ -104,7 +104,7 @@ function generarPaginacion(totalElementos) {
     for (let i = 1; i <= totalPaginas; i++) {
       const boton = document.createElement('button');
       boton.textContent = i;
-      boton.className = 'border-5 rounded-0';
+      boton.className = 'border-5 ';
       boton.onclick = () => {
         paginaActual = i;
         filtrarPersonajes();
@@ -131,11 +131,18 @@ function alternarTitulo() {
   titulo.classList.toggle('hidden');
 }
 
-// Alterna visibilidad de la sección de modales
 function alternarSubtitulo() {
-  const subtitulo = document.querySelector('.Subtítulo');
-  subtitulo.classList.toggle('hidden2');
+  const titulo = document.querySelector('.Subtítulo');
+  titulo.classList.toggle('Subtítulo-hidden');
 }
+
+// Alterna visibilidad de la sección de modales
+function alternarBotones() {
+  const subtitulo = document.querySelector('.Botones');
+  subtitulo.classList.toggle('Botones-hidden');
+}
+
+
 
 // Cierra una tarjeta con animación
 function cerrarTarjeta(boton) {
@@ -150,11 +157,50 @@ function hideTitle() {
     alternarTitulo();
   }
 
-  function hideTitle2() {
+  function hideSubtitle() {
     alternarSubtitulo();
   }
+
+  function hideBotones() {
+    alternarBotones();
+  }
+
+ 
 
 // Botón para reiniciar la búsqueda
 document.getElementById('resetBtn').addEventListener('click', () => {
   window.location.reload();
 });
+
+function recargarPagina() {
+        window.location.reload();
+    }
+
+    //Función para cambiar imagen
+
+      function cambiarImagen() {
+    alternarImagen();
+}
+
+function alternarImagen() {
+    const imagen = document.querySelector('.Imagen1');
+    
+    if (imagen.src.includes('Images/DragonBall/2.png')) {
+        // Añade la clase 'fading' para iniciar el desvanecimiento
+        imagen.classList.add('fading');
+        
+        // Espera un momento para que la opacidad baje antes de cambiar la imagen
+        setTimeout(() => {
+            // Cambia la fuente de la imagen
+            imagen.src = 'Images/1.png';
+            imagen.style.borderRadius = '0';
+            imagen.style.border = '0';
+            imagen.style.borderColor = 'none';
+            imagen.style.backgroundColor = 'transparent';
+            imagen.style.boxShadow = 'none';
+            
+            // Quita la clase 'fading' para que la nueva imagen aparezca
+            imagen.classList.remove('fading');
+        }, 500); // Coincide con la duración de la transición (0.5s)
+    }
+}
